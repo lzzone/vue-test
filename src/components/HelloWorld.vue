@@ -33,7 +33,17 @@ export default {
       // }, () => {
       //   // 请求失败回调
       // });
-
+    
+      this.$ajax.get('/api/ershou/my/delete_post',{
+            params: obj 
+        })
+       .then((res) => {
+         // 请求成功回调
+           console.log(res)
+       }, () => {
+         // 请求失败回调
+       });
+    
       console.log("44444");
     },
     ddd() {
